@@ -69,7 +69,7 @@
                     </asp:LoginView>
 						<div class="checkout">
 							<span>3 products, <span class="pink">$380,50</span></span>
-							<a href="cart.html" class="btn btn_checkout">Checkout</a>
+							<a href="Cart.aspx" class="btn btn_checkout">Checkout</a>
 						</div>
 					</div>
 					<div class="clear"></div>

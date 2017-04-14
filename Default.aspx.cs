@@ -18,32 +18,32 @@ namespace DatabaseConnectivity
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            string name = txtName.Text;
-            string email = txtEmail.Text;
-            string password = txtPassword.Text;
-            string address = txtAddress.Text;
+            //string name = txtName.Text;
+            //string email = txtEmail.Text;
+            //string password = txtPassword.Text;
+            //string address = txtAddress.Text;
 
-            try
-            {
-                SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog = DatabaseConnectivity;Trusted_Connection=true;");
-                con.Open();
+            //try
+            //{
+            //    SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog = DatabaseConnectivity;Trusted_Connection=true;");
+            //    con.Open();
 
-                SqlCommand com = new SqlCommand(); // Create a object of SqlCommand class
-                com.Connection = con; //Pass the connection object to Command
-                com.CommandType = CommandType.StoredProcedure; // We will use stored procedure.
-                com.CommandText = "spInsertUser"; //Stored Procedure Name
+            //    SqlCommand com = new SqlCommand(); // Create a object of SqlCommand class
+            //    com.Connection = con; //Pass the connection object to Command
+            //    com.CommandType = CommandType.StoredProcedure; // We will use stored procedure.
+            //    com.CommandText = "spInsertUser"; //Stored Procedure Name
 
-                com.Parameters.Add("@Name", SqlDbType.NVarChar).Value = name;
-                com.Parameters.Add("@Email", SqlDbType.NVarChar).Value = email;
-                com.Parameters.Add("@Password", SqlDbType.NVarChar).Value = password;
-                com.Parameters.Add("@Address", SqlDbType.NVarChar).Value = address;
+            //    com.Parameters.Add("@Name", SqlDbType.NVarChar).Value = name;
+            //    com.Parameters.Add("@Email", SqlDbType.NVarChar).Value = email;
+            //    com.Parameters.Add("@Password", SqlDbType.NVarChar).Value = password;
+            //    com.Parameters.Add("@Address", SqlDbType.NVarChar).Value = address;
 
-                com.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
+            //    com.ExecuteNonQuery();
+            //}
+            //catch (Exception ex)
+            //{
 
-            }
+            //}
 
 
         }

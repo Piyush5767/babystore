@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="registration.aspx.cs" Inherits="registration" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="registration.aspx.cs" Inherits="registration" %>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
     <table>
         <tr>
